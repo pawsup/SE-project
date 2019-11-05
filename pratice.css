@@ -1,0 +1,91 @@
+:root {
+	--main-color: #142C46;
+	--accent-color: #8D7050;
+	--footer-color: #403E3F;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 50px 50px;
+	grid-template-rows: 50px 50px;
+}
+
+.item3 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-color: red;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: 425px 575px;
+	grid-template-rows: 120px 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 160px;
+	color: white;
+	font-size: 11pt;
+	padding-top: 10px;
+	background-color: var(--footer-color);
+	justify-content: center;
+}
+
+.university {
+	display: grid;
+	grid-template-columns: 100px 290px;
+	grid-template-rows: 72px 35px;
+}
+
+.club_union {
+	display: grid;
+	grid-template-columns: 100px 450px;
+	grid-template-rows: 72px 35px;
+}
+
+.footer_logo {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	margin-top: 15px;
+}
+
+.footer_logo > img {
+	width: 80px;
+	height: 80px;
+	align-items: center;
+}
+
+.intro p {
+	line-height: 35%;
+}
+
+.sns ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sns a {
+	display: block;
+	margin: 0px 10px 0px 3px;
+	padding: 0;
+	color: inherit;
+	font-size: 15px;
+	text-decoration: none;
+	border : solid 1px currentColor;
+	width: 2em;
+	line-height: 2em;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.sns a:hover {
+	background-color: var(--accent-color);
+}
+
+#copyright {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: center;
+}

@@ -1,0 +1,175 @@
+:root {
+	--main-color: #142C46;
+	--accent-color: #8D7050;
+	--footer-color: #403E3F;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	margin: 0 auto;
+}
+
+
+a {
+	text-decoration: none !important;;
+}
+
+header {
+	top: 0;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 45px 116px;
+	border-bottom: 1.2px solid #949293;
+}
+
+.top {
+	background-color: var(--main-color);
+	border-bottom: 5.5px solid var(--accent-color);
+}
+
+.top ul {
+	display: flex;
+	width: 1000px;
+	margin: 0 auto;
+	justify-content: flex-end;
+}
+
+.top ul li {
+	list-style: none;
+	border-left: 1px solid white;
+	padding: 0px 20px 0px 20px;
+	margin-top: 8px;
+}
+
+.top ul li:first-child {
+	border-left: none;
+}
+
+.top ul li a {
+	font-family: "한국외대체 B";
+	font-size: 18px;
+	color: white;
+}
+
+.logo {
+	display: grid;
+	grid-template-columns: 100px 270px;
+    grid-template-rows: 60px 40px;
+	font-family: "한국외대체 B";
+	padding-top: 11px;
+	justify-content: center;
+}
+
+#logo1 {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+#logo1 img {
+	width: 95px;
+	height: 95px;
+}
+
+#logo2 {
+	font-size: 42pt;
+}
+
+#logo2 #hufs {
+	color: var(--main-color)
+}
+
+#logo2 #cus {
+	color: var(--accent-color)
+}
+
+#logo3 {
+	font-size: 15pt;
+	color: var(--main-color);
+}
+
+#logo3 a {
+	color: inherit;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: 425px 575px;
+	grid-template-rows: 120px 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 160px;
+	color: white;
+	font-size: 11pt;
+	padding-top: 15px;
+	background-color: var(--footer-color);
+	justify-content: center;
+}
+
+.university {
+	display: grid;
+	grid-template-columns: 100px 290px;
+	grid-template-rows: 72px 35px;
+}
+
+.club_union {
+	display: grid;
+	grid-template-columns: 100px 450px;
+	grid-template-rows: 72px 35px;
+}
+
+.footer_logo {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	margin-top: 15px;
+}
+
+.footer_logo > img {
+	width: 80px;
+	height: 80px;
+	align-items: center;
+}
+
+.intro p {
+	line-height: 130%;
+}
+
+.sns ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sns ul li {
+	height: 20px;
+}
+
+.sns a {
+	display: block;
+	margin: 0px 10px 0px 3px;
+	padding: 0;
+	color: inherit;
+	font-size: 15px;
+	text-decoration: none;
+	border : solid 1px currentColor;
+	width: 2em;
+	line-height: 2em;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.sns a:hover {
+	background-color: var(--accent-color);
+}
+
+#copyright {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: center;
+}
